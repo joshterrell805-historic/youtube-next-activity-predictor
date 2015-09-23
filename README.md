@@ -9,6 +9,9 @@ by using three algorithms of your choice
 ### Instructions
 
 #### Download a google developer's key with access to the Youtube Data API
+To use scripts which interface with youtube's data API, you must provide
+a google developer's API key in the environment variable `GOOGLE_API_KEY`.
+
 1. Sign up for a
 [google developer's account](https://console.developers.google.com/project).
 1. Create a project

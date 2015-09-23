@@ -5,6 +5,7 @@
   "main":"main.njs",
   "dependencies": {
     "lodash": "*",
-    "request-promise": "*"
+    "request-promise": "*",
+    "csv": "*"
   }
 }
