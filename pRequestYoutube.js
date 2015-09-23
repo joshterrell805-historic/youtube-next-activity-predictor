@@ -19,6 +19,8 @@ if (!module.parent) {
   var options = process.argv[3] ? JSON.parse(process.argv[3]) :
       {part: 'id', forUsername: 'vsauce'};
   pRequestYoutube(endpoint, options)
-  .then(console.log.bind(console))
+  .then(function(res) {
+    console.log(util.inspect(res, false, null));
+  })
   .done();
 }
