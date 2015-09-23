@@ -13,6 +13,6 @@ by using three algorithms of your choice
 [google developer's account](https://console.developers.google.com/project).
 1. Create a project
 1. Enable the youtube data api
-1. From the credentials tab, create a new service account (automatically
-   downloads a json file representing your key).
-1. Save that key in the root directory of this repository as `google-key.json`.
+1. From the credentials tab, create a new api key (server).
+1. Save your api key in the environment variable "GOOGLE\_API\_KEY"
+  - linux/mac: `export GOOGLE_API_KEY=your_key_here`

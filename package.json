@@ -1,0 +1,10 @@
+{
+  "name":"youtube-next-activity-predictor",
+  "version":"0.0.0-0",
+  "repositiory":"joshterrell805/youtube-next-activity-predictor",
+  "main":"main.njs",
+  "dependencies": {
+    "lodash": "*",
+    "request-promise": "*"
+  }
+}
