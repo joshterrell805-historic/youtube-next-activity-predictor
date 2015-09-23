@@ -15,8 +15,6 @@ function pYoutubeChannelIdFromUsername(username) {
 if (!module.parent) {
   var username = process.argv[2] || 'vsauce';
   pYoutubeChannelIdFromUsername(username)
-  .then(function(res) {
-    console.log(util.inspect(res, false, null));
-  })
+  .then(console.log.bind(console))
   .done();
 }
