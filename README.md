@@ -6,9 +6,15 @@ video, uploading a video.
 Based on that,  build a predictor of what the next activity for the user will be
 by using three algorithms of your choice
 
-### Instructions
+## Dependencies
+- node (and npm)
 
-#### Specify a Google Developer's API key
+## Instructions
+
+### Download Project Dependencies
+From the project root: `exec/install-dependencies`
+
+### Specify a Google Developer's API key
 To use scripts which interface with youtube's data API, you must provide
 a google developer's API key in the environment variable `GOOGLE_API_KEY`.
 
@@ -20,7 +26,7 @@ a google developer's API key in the environment variable `GOOGLE_API_KEY`.
 1. Save your api key in the environment variable "GOOGLE\_API\_KEY"
   - linux/mac: `export GOOGLE_API_KEY=your_key_here`
 
-### Limitations
+## Limitations
 
 This is a demonstration of my ability to scrape for and parse data as well as
 use, tune, and evaluate machine-learning algorithms. As such, I didn't spend
