@@ -16,3 +16,13 @@ by using three algorithms of your choice
 1. From the credentials tab, create a new api key (server).
 1. Save your api key in the environment variable "GOOGLE\_API\_KEY"
   - linux/mac: `export GOOGLE_API_KEY=your_key_here`
+
+### Limitations
+
+This is a demonstration of my ability to scrape for and parse data as well as
+use, tune, and evaluate machine-learning algorithms. As such, I didn't spend
+much time tuning features or tweaking algorithms.
+
+A useful predictor would require much more attention to features. For
+instance, channel statistics (view count, comment count, ...) and other
+chanel/user information could help with the predictive power of this tool.
