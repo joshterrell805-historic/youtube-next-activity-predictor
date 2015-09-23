@@ -9,13 +9,14 @@ var maxResults = 50;
 
 function pYoutubeLatestHistoryFromChannelId(channelId) {
   return pRequestYoutube('activities', {part: 'snippet', channelId: channelId,
-      maxResults: maxResults})
+      maxResults: maxResults}, true)
   .then(function(res) {
     return _.pluck(res.items, 'snippet');
   });
 }
 
 if (!module.parent) {
+  var util = require('util');
   var channelId = process.argv[2] || 'UC6nSFpj9HTCZ5t-N3Rm3-HA';
   pYoutubeLatestHistoryFromChannelId(channelId)
   .then(function(res) {
