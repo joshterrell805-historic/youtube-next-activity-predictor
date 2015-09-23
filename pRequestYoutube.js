@@ -1,5 +1,3 @@
-/* Make a request to a Youtube API endoint.
- */
 module.exports = pRequestYoutube;
 
 var request = require('request-promise'),
@@ -20,5 +18,6 @@ if (!module.parent) {
   pRequestYoutube('channels', {part: 'id', forUsername: 'vsauce'})
   .then(function(res) {
     console.log(util.inspect(res, {colors: true}));
-  });
+  })
+  .done();
 }
