@@ -8,6 +8,8 @@ by using three algorithms of your choice
 
 ## Dependencies
 - node (and npm)
+- [scipy and scikit-learn](http://scikit-learn.org/stable/install.html)
+  `pip install -U numpy scipy scikit-learn`
 
 ## Instructions
 
