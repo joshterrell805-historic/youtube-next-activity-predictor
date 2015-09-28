@@ -6,7 +6,7 @@ function pYoutubeChannelIdFromUsername(username) {
   return pRequestYoutube('channels', {part: 'id', forUsername: username})
   .then(function(res) {
     if (res.pageInfo.totalResults === 0) {
-      throw new Error('User does not exist');
+      throw new Error('User does not exist: ' + username);
     }
     return res.items[0].id;
   });
