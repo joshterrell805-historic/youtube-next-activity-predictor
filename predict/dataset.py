@@ -4,9 +4,11 @@ types = ["bulletin", "channelItem", "comment", "favorite", "like",
         "playlistItem", "recommendation", "social", "subscription",
         "upload"]
 
-def getDataset():
+def getDataset(users=None):
     """Return a list of examples (for training or testing)"""
-    users = User.readAll()
+    if users == None:
+        users = User.readAll()
+
     X = []
     y = []
     for user in users:
