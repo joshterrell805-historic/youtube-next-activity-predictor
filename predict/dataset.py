@@ -11,7 +11,7 @@ def getDataset():
     y = []
     for user in users:
         activities = user.getChannelActivities()
-        if len(activities) >= 2:
+        if len(activities) >= 3:
             features = computeFeatures(activities[1:len(activities)])
             output = activities[0]['type']
             output = types.index(output)
@@ -22,7 +22,9 @@ def getDataset():
 def computeFeatures(activities):
     """Given the latest activities for a user, return a feature vector."""
     # TODO come up with a list of features with a bit better predictive power
-    return [computePercentType(activities, t) for t in types]
+    features = [computePercentType(activities, t) for t in types]
+    # features.extend([1 if activities[-2]['type'] == t else 0 for t in types])
+    return features
 
 def computePercentType(activities, t):
     count = 0
